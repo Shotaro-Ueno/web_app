@@ -1,29 +1,86 @@
-html {
-  background: linear-gradient(#550059,#B600BF) ;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#550059, #b600bf);
   background-repeat: no-repeat;
   color: white;
 }
 
-
-
 /* ホーム画面 */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 30px;
 }
 
-div p {
-  text-align: center;
+.home {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 4s;
+  transform: translateY(600px);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.greet {
+  font-size: 20px;
 }
 
 .welcome-text {
   opacity: 0;
   visibility: hidden;
   transition: all 2s;
-  transform: translateY(150px);
+  transform: translateY(100px);
+}
+
+div p {
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  padding-bottom: 5px;
+}
+
+.move ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.move li {
+  list-style: none;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(98, 20, 117);
+  border-radius: 5px;
+}
+
+.move a {
+  color: #fff;
 }
 
 .is-active {
   /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(50%);
+}
+
+.second-active {
   opacity: 1;
   visibility: visible;
   /*元の位置に戻す*/
