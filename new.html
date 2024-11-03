@@ -48,36 +48,39 @@
       <!-- 書いた日記を並べて表示 -->
       <form method="POST" action="/">
         <div class="mkitem">
-          <div class="select-menu">
-            <select class="menu" required>
-              <option value="" selected>何について書きますか？</option>
-              <option value="work">Work</option>
-              <option value="pastime">Pastime</option>
-              <option value="food">Food</option>
-              <option value="good">Good</option>
-              <option value="more">More</option>
-              <option value="emotion">Emotion</option>
-              <option value="summary">Summary</option>
+          <div class="select-menu" >
+            <select class="menu" id="menu" required>
+              <option value="" disabled>何について書きますか？</option>
+              <option value="Work">Work</option>
+              <option value="Pastime">Pastime</option>
+              <option value="Food">Food</option>
+              <option value="Good">Good</option>
+              <option value="More">More</option>
+              <option value="Emotion">Emotion</option>
+              <option value="Summary" selected>Summary</option>
             </select>
           </div>
-          <div class="mktext">
-            <button class="addFieldBtn" type="submit">
-              <span class="material-symbols-outlined"> add </span>
-            </button>
-          </div>
+          <button class="addFieldBtn">
+            <span class="material-symbols-outlined"> add </span>
+          </button>
         </div>
-        <table class="inputFields">
-          <tr class="inputField">
-            <th>
-              <input type="text" name = "content[]" placeholder="">
-            </th>
-            <td>
-              <button class = "deleteFieldBtn">delete</button>
-            </td>
-          </tr>
-        </table>
-          
-        
+        <div class="inputFields">
+          <table class="inputField">
+            <tr>
+              <tr>
+                <th id = "set" class="subcap" colspan="2"></th>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="content[]"></textarea>
+                </td>
+                <td>
+                  <button class="deleteFieldBtn">delete</button>
+                </td>
+              </tr>
+            </tr>
+          </table>
+        </div>
       </form>
       <!-- <form method="POST" action="/">
         <div class="inputFields">
@@ -90,5 +93,7 @@
         </div>
       </form> -->
     </main>
+    <script src="new.js"></script>
   </body>
+  
 </html>

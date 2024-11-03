@@ -153,10 +153,13 @@ header nav ul li a {
 .mkitem {
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 30px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%)
+             translateY(-50%);
 }
 
 .mkitem .select-menu {
@@ -171,12 +174,29 @@ header nav ul li a {
   color: #b600bf;
 }
 
+
+
 main table {
   margin: auto;
+  padding-top: 200px;
+
 }
-table input {
+.new-table {
+  margin: auto;
+  padding: 0;
+}
+
+/* table .subcap {
+  padding: 0;
+  margin: 0;
+} */
+
+table textarea {
   font-size: 20px;
-  height: auto;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 20px;
   background-color: #550059;
   color: #fff;
 }
