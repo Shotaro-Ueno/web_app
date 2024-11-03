@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+.home-body {
   height: 100vh;
   background: linear-gradient(#550059, #b600bf);
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
 }
 
 /* ホーム画面 */
-header {
+.home-header {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -25,7 +25,7 @@ header {
   transform: translateY(600px);
 }
 
-main {
+.home-main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -87,12 +87,31 @@ div p {
   transform: translateY(0);
 }
 
-footer {
-  position: absolute;
+
+/* new */
+.new-body {
+  /* height: 100vh; */
+  background: linear-gradient(#8d0194, #b600bf);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.new-header {
+  position: fixed;
+  top: 0px;
+  left: 50%;
   text-align: center;
-  bottom: 0;
-  left: 0;
+}
+
+.new-footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
   width: 100%;
   height: 30px;
   background: rgb(98, 20, 117);
+}
+
+.new-footer a {
+  color: #fff;
 }
