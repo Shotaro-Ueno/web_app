@@ -33,7 +33,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .greet {
@@ -91,32 +91,29 @@ div p {
   transform: translateY(0);
 }
 
-
 /* new */
 .new-body {
-  /* height: 100vh; */
+  min-height: 100vh;
   background: linear-gradient(#8d0194, #b600bf);
   background-repeat: no-repeat;
-  color: white;
+  color: #fde5fb;
 }
 
 .new-header {
   width: 100%;
-  
-  /* position: fixed; */
 }
 .new-date {
   font-size: 40px;
   text-align: center;
 }
 
-.header-content { 
+.header-content {
   padding-left: 20px;
   padding-top: 10px;
   padding-right: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid #e4c2e1;
   position: fixed;
   top: 0;
   left: 0;
@@ -141,19 +138,51 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fde5fb;
 }
 
-
-.new-footer {
-  position: fixed;
-  bottom: 0px;
+.menu {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #b600bf;
   text-align: center;
-  width: 100%;
-  height: 30px;
-  background: rgb(98, 20, 117);
+  border-radius: 5px;
+  background-color: #fde5fb;
 }
 
-.new-footer a {
+.mkitem {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.mkitem .select-menu {
+  text-align: center;
+  padding-right: 5px;
+}
+
+.mkitem button {
+  background-color: #fde5fb;
+  border: 0.5px solid #fde5fb;
+  border-radius: 5px;
+  color: #b600bf;
+}
+
+main table {
+  margin: auto;
+}
+table input {
+  font-size: 20px;
+  height: auto;
+  background-color: #550059;
   color: #fff;
+}
+table button {
+  background-color: #fde5fb;
+  border: 0.5px solid #fde5fb;
+  border-radius: 5px;
+  color: #b600bf;
 }
