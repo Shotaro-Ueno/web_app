@@ -9,9 +9,36 @@
 </head>
 <body class="new-body">
   <header class="new-header">
-    <div>
-      <p>12/28</p>
+    <div class = "header-content">
+      <!-- 日付を表示 -->
+      <h1 class="new-date"><span id = "today"></span></h1>
+      <script>
+        var today = new Date();
+        var month = today.getMonth()+1;
+        var date = today.getDate();
+        document.getElementById('today').innerHTML = month + "/" + date;
+      </script>
+      <nav>
+        <ul>
+          <li><a href="home.html">
+            <span class="material-symbols-outlined">
+              home
+              </span>
+             </a>
+          </li>
+          <li>
+            <a href="https://x.com/mgJIePPUtSAqwr1"><span class="material-symbols-outlined">
+              event_note
+              </span></a>
+          </li>
+          <li><a href="schedule.html"><span class="material-symbols-outlined">
+            done_outline
+            </span></a>
+          </li>
+        </ul>
+      </nav>
     </div>
+
   </header>
   <main class="new-main">
     <br>
@@ -121,13 +148,6 @@
     <br>
     <p>aisfj</p>
   </main>
-  <footer class = "new-footer">
-    <a href="https://x.com/mgJIePPUtSAqwr1"><span class="material-symbols-outlined">
-      event_note
-      </span></a>
-    <a href="home.html"><span class="material-symbols-outlined">
-      home
-      </span></a>
-  </footer>
+  
 </body>
 </html>

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 .home-body {
   height: 100vh;
   background: linear-gradient(#550059, #b600bf);
@@ -97,11 +101,49 @@ div p {
 }
 
 .new-header {
-  position: fixed;
-  top: 0px;
-  left: 50%;
+  width: 100%;
+  
+  /* position: fixed; */
+}
+.new-date {
+  font-size: 40px;
   text-align: center;
 }
+
+.header-content { 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+nav .material-symbols-outlined {
+  font-size: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 .new-footer {
   position: fixed;
